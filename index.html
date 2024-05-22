@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-7u7M+g1r/i7+s9396qG1cP5+5j7F5sg71Qn41r7u/E3E+ATSkmc9PG1lA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-B4MznFD7EqoOaDhhoUKjvb8OXkcp+bxzks5+muBcWD6oJtk/61zgaZlaHfOfc+N/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Car Jiji | Car Rentals</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/puma.jpeg" alt="logo">
+            
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="ourcars.html">Our Cars</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ.</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="video-background">
+                <iframe src="https://www.youtube.com/embed/rWsUino_XxI?autoplay=1&mute=1&loop=1&playlist=rWsUino_XxI" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to Car Jiji.</h1>
+                <p>Rent a car today. Affordable pricing</p>
+               
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature" id="features">
+                <h2>Our Cars.</h2>
+                <p>We offer a wide selection of high-quality cars that meet your needs and budget.</p>
+                
+                <div class="product-cards">
+                 <!---  <div class="product-card">
+                        <img src="images/2016-Mazda-Demio-Skyactiv-Diesel-1.5L-c.jpg" alt="Audi Q3">
+                        <h3>Economy Class</h3>
+                        <p>Mazda Demio</p>
+                        <P>From Kes 3,000</P>
+                        <a href="ourcars.html"><button>View Car.</button></a>
+                    </div>--> 
+                    
+                    <div class="product-card">
+                        <img src="images/royalsaloon.jpeg" alt="Toyota Athlete">
+                        <h3>Compact Cars</h3>
+                        <p>Toyota Crown</p>
+                        <p>From Kes 6,000</p>
+                        <a href="ourcars.html"><button>View Car.</button></a>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/2022-mazda-cx-5-2p5-turbo-signature-123-1657559083.jpg" alt="CX-5">
+                        <h3>Mid-size SUV</h3>
+                        <p>Mazda CX-5</p>
+                        <p>From Kes 7,000</p>
+                        <a href="ourcars.html"><button>View Car.</button></a>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/toyota voxy.jpg" alt="voxy">
+                        <h3>MPV</h3>
+                        <p>Toyota Voxy</p>
+                        <p>From Kes 5,500</p>
+                        <a href="ourcars.html"><button>View Car.</button></a>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/prado.webp" alt="Prado">
+                        <h3>Luxury SUV</h3>
+                        <p>Toyota Prado</p>
+                        <p>From Kes 15,000</p></p>
+                        <a href="ourcars.html"><button>View Car.</button></a>
+                    </div>
+                    
+                   <!--- <div class="product-card">
+                        <img src="images/2023_Land_Rover.jpg" alt="Range Rover">
+                        <h3>High-end SUV</h3>
+                        <p>Range Rover Sport</p>
+                        <p>From Kes 30,000</p>
+                        <a href="ourcars.html"><button>View Car.</button></a>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+        <br>
+        
+        <section class="find-car">
+            <div class="feature">
+                <h2>Find a car that suits you:</h2>
+                <p>On a click of a button, you get a car of your choice.</p>
+            </div>
+            <br>
+            <div class="filter-options">
+                <button id="searchByNameBtn">Search by Name</button>
+                <button id="filterByBrandBtn">Filter by Brand</button>
+                <button id="filterByBodyTypeBtn">Filter by Body Type</button>
+            </div>
+            <div class="filter-content">
+                <div id="searchByName" class="filter-section active">
+                    <input type="text" placeholder="Search vehicle name..." />
+                </div>
+                <div id="filterByBrand" class="filter-section">
+                    <img src="images/toyota one.png" alt="Brand 1" />
+                    <img src="images/nissan white.jpg" alt="Brand 2" />
+                    <img src="images/Land_Rover_logo_black.svg.png" alt="Brand 3" />
+                    <img src="images/chev.jpeg" alt="Brand 3" />
+                    <img src="images/Mazda_Logo.png" alt="Brand 3" />
+                    <img src="images/Emblem-Mercedes.jpg" alt="Brand 3" />
+                    <!-- Add more brand logos as needed -->
+                </div>
+                <div id="filterByBodyType" class="filter-section">
+                   <div> <img src="images/modern-suv.jpg" alt="SUV" />
+                    <img src="images/saloon vector.avif" alt="Saloon Car" />
+                    <img src="images/car_-_convertible_006.jpg" alt="Convertible Car" /></div>
+                   <div> <img src="images/hatchback vector.jpg" alt="Hatchback" />
+                    <img src="images/van vector.jpg" alt="Van" />
+                    <img src="images/ram vector.jpeg" alt="Pickup" /></div>
+                </div>
+            </div>
+            
+        </section>
+<script>
+    document.getElementById('searchByNameBtn').addEventListener('click', function() {
+    showFilterSection('searchByName');
+});
+
+document.getElementById('filterByBrandBtn').addEventListener('click', function() {
+    showFilterSection('filterByBrand');
+});
+
+document.getElementById('filterByBodyTypeBtn').addEventListener('click', function() {
+    showFilterSection('filterByBodyType');
+});
+
+function showFilterSection(sectionId) {
+    // Hide all filter sections
+    document.querySelectorAll('.filter-section').forEach(function(section) {
+        section.style.display = 'none';
+    });
+
+    // Show the selected filter section
+    document.getElementById(sectionId).style.display = 'block';
+
+    // Show the filter content container
+    document.querySelector('.filter-content').style.display = 'block';
+}
+
+</script>        
+    
+    
+        <br>
+        <section class="steps">
+            <div class="feature">
+                <h2>Renting a car is as simple as One, Two, Three</h2>
+                <br>
+                <div class="cards-container">
+                  
+                  <div class="card">
+                    <i class="fas fa-car card-icon"></i>
+                    <h3>One</h3>
+                    <p>Select your car.</p>
+                  </div>
+                  <div class="card">
+                    <i class="fas fa-envelope card-icon"></i>
+                    <h3>Two</h3>
+                    <p>Enquire.</p>
+                  </div>
+                  <div class="card">
+                    <i class="fas fa-wallet card-icon"></i>
+                    <h3>Three</h3>
+                    <p>Pay.</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <style>
+                .steps{
+                    background-color: white;
+                }
+              </style>
+        </section>
+        
+        <section class="our-partners">
+            <div class="partners">
+                <h2>Our Trusted Partners:</h2>
+                <br>
+                <br>
+                <p></p>
+                <div class="partner-logos">
+                    <img src="images/Mercedes logo.jpg" alt="Partner 1 Logo">
+                    <img src="images/puma.jpeg" alt="Partner 2 Logo">
+                    <img src="images/nissan 1.jpg" alt="Partner 3 Logo">
+                    <img src="images/toyota one.png" alt="Partner 4 Logo">
+                    <img src="images/mazda one.jpg" alt="Partner 5 Logo">
+                    <img src="images/BMW-Logo-1997.png" alt="Partner 6 Logo">
+                </div>
+                <br>
+                <br>
+                <div class="partner-logos">
+                    <img src="images/logo-lamborghini.jpg" alt="Partner 1 Logo">
+                    <img src="images/porsche logo.jpg" alt="Partner 2 Logo">
+                    <img src="images/chev.jpeg" alt="Partner 3 Logo">
+                    <img src="images/audi logo.jpg" alt="Partner 4 Logo">
+                    <img src="images/Bentley-logo.jpg" alt="Partner 5 Logo">
+                    <img src="images/maserati.webp" alt="Partner 6 Logo">
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links:</h3>
+                <ul>
+                    <li><a href="#home">Privacy Policy</a></li>
+                    <li><a href="#features">Terms & Conditions</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3></h3>
+                
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+              
+            </div>
+            <div class="footer-address">
+                <h3>Contact Us:</h3>
+                <address>
+                    Lower Kabete Rd<br>
+                    Rolina Apartments, Nairobi<br>
+                    Phone: (+254) 757270468<br>
+                    Email: <a href="mailto:info@carjiji.com">info@carjiji.com</a>
+                </address>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter:</h3>
+                <form>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="copyright">&copy; Car Jiji. All Rights Reserved.</p>
+
+            <script>
+                const currentYear = new Date().getFullYear();
+                const copyrightElement = document.getElementById('copyright');
+                copyrightElement.innerHTML = `&copy; ${currentYear} Car Jiji. All Rights Reserved.`;
+            </script>
+            
+        </div>
+    </footer>
+</body>
+</html>

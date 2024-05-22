@@ -1,0 +1,153 @@
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+<section class="rates">
+    <div class="feature">
+        <br>
+        <br>
+        <h2>Our Self Drive Rates</h2>
+        <p>Get the best deals on all our cars. Affordable prices with no compromise on quality:</p>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>CAR MODEL</th>
+                    <th>CATEGORY</th>
+                    <th>DAILY RATES</th>
+                    <th>WEEKLY RATES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mazda Demio</td>
+                    <td>Economy Class</td>
+                    <td>Kes 3,000</td>
+                    <td>Kes 20,000</td>
+                </tr>
+                <tr>
+                    <td>Toyota Crown</td>
+                    <td>Compact</td>
+                    <td>Kes 6,000</td>
+                    <td>Kes 40,000</td>
+                </tr>
+                <tr>
+                    <td>Mazda CX-5</td>
+                    <td>Mid-size SUV</td>
+                    <td>Kes 7,000</td>
+                    <td>Kes 45,000</td>
+                </tr>
+                <tr>
+                    <td>Toyota Voxy</td>
+                    <td>MPV</td>
+                    <td>Kes 5,500</td>
+                    <td>Kes 37,000</td>
+                </tr>
+                <tr>
+                    <td>Toyota Prado</td>
+                    <td>Luxury SUV</td>
+                    <td>Kes 15,000</td>
+                    <td>Kes 100,000</td>
+                </tr>
+                <tr>
+                    <td>Range Rover Sport</td>
+                    <td>High-end SUV</td>
+                    <td>Kes 50,000</td>
+                    <td>Kes 350,000</td>
+                </tr>
+                <!------------->
+            </tbody>
+        </table>
+    </div> 
+    <style>
+       .rates{
+            background-color:azure;
+        }
+    </style>
+</section>
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(25% - 40px); /* Adjust width and margin for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.product-card:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #009900;
+}
+
+.product-card .rent-now {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #009900;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product-card .rent-now:hover {
+    background-color: #0056b3;
+}

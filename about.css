@@ -1,0 +1,27 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.welcomeContainer {
+    width: 100%;
+    height: 100vh; /* Makes the container take the full height of the viewport */
+    background-image: url('images/Nairobi-City-County-15-2.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.welcomeText {
+    position: absolute; /* Absolute positioning to place the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    text-align: left; /* Center text inside the div */
+    color: white; /* Text color */
+}
+.welcomeText h1 {
+    font-size: 3em; /* Larger font size for the heading */
+    margin: 0; /* Remove default margin */
+}
