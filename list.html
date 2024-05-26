@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
-    
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="list.css">
     <title>Car Jiji | Car Rentals</title>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/puma.jpeg" alt="logo">
+            <img src="images/puma.jpeg" alt="logo"> 
         </div>
         <nav class="navbar">
             <ul>
@@ -33,76 +33,80 @@
         </nav>
     </header>
     <main>
-      <section class="welcome">
-       
-        <img src="images/endless mountain.jpg">
-      </section>
-        <section class="about">
-            <h1>What We Offer</h1>
-            <div class="about-content">
-                <div class="card">
-                    <img src="images/rentals.webp" alt="Car Sales">
-                    <h3>Car Rentals</h3>
-                    <p>We hire out cars to individuals looking to self drive for weekends, road trips or any other
-                        personal use.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="images/Airport pick ups.jpg" alt="Car Rentals">
-                    <h3>Airport Pick-ups</h3>
-                    <p>We offer affordable yet premium quality airport pick-ups services for or clients landing from abroad
-                        at all Kenyan airports.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="images/wedding convoy.jpg" alt="Car Maintenance">
-                    <h3>Events Convoys</h3>
-                    <p>For events such as weddings, graduations, corporate events,
-                         we provide high quality convoys at a very fair pricing</p>
-                </div>
-                <div class="card">
-                    <img src="images/sale car.webp" alt="Car Financing">
-                    <h3>Car Sales</h3>
-                    <p>Car Jiji offers our clients a chance to own their dream cars. We offer used vehicles and directly 
-                        imported new cars.
-                    </p>
+        <section class="listcar">
+            <h3>Steps to List Your Car at Car-Jiji</h3>
+            <div class="info-card">
+                
+                <div class="info-details">
+                    <h2>Step 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque ut eros eu mauris vehicula lacinia.
+                        Quisque ut eros eu mauris vehicula lacinia.
+                         Quisque ut eros eu mauris vehicula lacinia.</p>
+                    
                 </div>
             </div>
-            <div class="about-content">
-                <div class="card">
-                    <img src="images/vip convoy.jpg" alt="Car Sales">
-                    <h3>VIP Convoys</h3>
-                    <p>We have a wide range of brand new cars available for higher for exclusive and premium VIP convoys.
-                        We additionally provide competent drivers for such convoys.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="images/tourist cars.jpg" alt="Car Rentals">
-                    <h3>Tourist Transport</h3>
-                    <p>For travel companies hosting tourists in Kenya, we offer tourist vans, buses and drivers. We also 
-                        offer travel services for independent tourist groups.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="images/content creation.jpg" alt="Car Maintenance">
-                    <h3>Content Creation</h3>
-                    <p>Car Jiji offers a wide variety of quality cars to content creators such as musicians, tiktokers, actors
-                        and car bloggers looking to use cars in their contents.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="images/car-loan.jpg" alt="Car Financing">
-                    <h3>Car Financing</h3>
-                    <p>In your efforts to own a car, Car Jiji is more than willing to finance your dreams come true with 
-                        a very affordable plan and interest rates. Reach out to us for any enquiry.
-                    </p>
+            <div class="info-card">
+              <!--  <div class="info-image">
+                    <img src="info1.jpg" alt="Information 1">
+                </div>-->
+                <div class="info-details">
+                    <h2>Step 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque ut eros eu mauris vehicula lacinia.Quisque ut eros eu mauris vehicula lacinia.
+                        Quisque ut eros eu mauris vehicula lacinia.</p>
+                    
                 </div>
             </div>
-            
+        
+            <div class="info-card">
+               <!--- <div class="info-image">
+                    <img src="info2.jpg" alt="Information 2">
+                </div>--->
+                <div class="info-details">
+                    <h2>Step 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Quisque ut eros eu mauris vehicula lacinia.
+                         Quisque ut eros eu mauris vehicula lacinia
+                         .Quisque ut eros eu mauris vehicula lacinia.</p>
+                    
+                </div>
+            </div>
         </section>
         
-    
-</main>
+        <section class="form-group">
+            <div class="image-container">
+                <img src="images/2023_Land_Rover.jpg" alt="Car Image">
+            </div>
+            <div class="form-container">
+                <form action="/submit_car_listing" method="POST">
+                    <h1>List Your Car and Start Earning</h1>
+                    
+                    <label for="carMake">Car Make:</label>
+                    <input type="text" id="carMake" name="carMake" required><br>
+                
+                    <label for="carModel">Car Model:</label>
+                    <input type="text" id="carModel" name="carModel" required><br>
+                
+                    <label for="carYear">Car Year:</label>
+                    <input type="number" id="carYear" name="carYear" min="2000" max="2024" required><br>
+                
+                    <label for="carDescription">Description:</label><br>
+                    <textarea id="carDescription" name="carDescription" rows="4" cols="50" required></textarea><br>
+                
+                    <label for="carImage">Car Image:</label>
+                    <input type="file" id="carImage" name="carImage" accept="image/*" required><br>
+                
+                    <label for="carPrice">Price per Day:</label>
+                    <input type="number" id="carPrice" name="carPrice" min="1500" required><br>
+                
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+
+    </main>
     <footer>
         <div class="footer-content">
             <div class="footer-links">
@@ -152,10 +156,5 @@
             
         </div>
     </footer>
-</body>
-</html>
-
-
-    
 </body>
 </html>

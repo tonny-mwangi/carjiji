@@ -26,6 +26,11 @@ header {
 .logo-container img {
     max-height: 50px;
 }
+.navbar{
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border:2px;
+}
 
 .navbar ul {
     display: flex;
@@ -61,7 +66,6 @@ main {
 .hero {
     position: relative;
     height: 100vh;
-    
     color: #fff;
     text-align: center;
     display: flex;
@@ -189,7 +193,7 @@ main {
     cursor: pointer;
 }
 
-.product-card button:hover {
+.product-card button:hover .stars {
     background-color: #0056b3;
 }
 
