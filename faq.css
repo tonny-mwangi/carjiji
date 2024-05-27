@@ -1,0 +1,42 @@
+main{
+   margin-top: 150px;
+}
+.FAQ {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+.FAQ h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #009900;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000; /* Blue color for question */
+    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+}
+
+.question p {
+    font-size: 16px;
+    color: #555;
+    display: none; /* Initially hide the answers */
+}
+
+/* Style for dropdown arrow */
+.dropdown-toggle::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    float: right;
+}
+
+.open::after {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}
