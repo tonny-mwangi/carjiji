@@ -18,7 +18,7 @@ main{
 /* Styling for the information cards */
 .info-card {
     display: inline-block;
-    width: 300px;
+    max-width: 300px;
     margin: 20px;
     padding: 15px;
     background-color: #fff;
@@ -29,11 +29,7 @@ main{
     vertical-align: top;
 }
 
-.info-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-}
+
 
 .info-details {
     padding: 10px;
@@ -70,34 +66,10 @@ main{
     background-color: #0056b3;
 }
 
-.form-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
-    
-}
-
-.image-container {
-    flex: 1;
-    margin-top: 100px;
-    border: 1px solid #009900;
-    border-radius: 5px;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .form-container {
-    flex: 1;
-    max-width: 600px;
-    
-    margin-top: 100px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .form-container form {

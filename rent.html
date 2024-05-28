@@ -25,35 +25,44 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="ourcars.html">Our Cars</a></li>
-                <li><a href="#">List Your Car</a></li>
+                <li><a href="list.html">List Your Car</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ.</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ.</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="rental">
-        <div class="requirements">
-            <h2>Rental Requirements</h2>
-            <ul>
-                <li>Valid driver's license</li>
-                <li>Credit card in your name</li>
-                <li>Minimum age of 21</li>
-                <li>Proof of insurance</li>
-                <li>Security deposit</li>
-            </ul>
-        </div>
-        <div class="requirementsTwo"><br>
-            <h2>Rental Requirements</h2>
-            <ul>
-                <li>Valid driver's license</li>
-                <li>Credit card in your name</li>
-                <li>Minimum age of 21</li>
-                <li>Proof of insurance</li>
-                <li>Security deposit</li>
-            </ul>
-        </div>
+            <h3>Requirements</h3>
+            <div class="required">
+                <div class="required-details">
+                    <h2>Mandatory Details</h2>
+                    <p><ul>
+                        <li>Valid National ID/ Passport.</li>
+                        <li>Valid driving license.</li>
+                        <li>Functional phone number.</li>
+                        <li>Proof of address.</li>
+                        <li>Proof of insurance.</li>
+                        <li>Full hiring payment.</li>
+                        <li>Minimum age of 21.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="required">
+                <div class="required-details">
+                    <h2>Other Requirements</h2>
+                    <p><ul>
+                        <li>A copy of KRA pin(where necessary).</li>
+                        <li>Proof of residence(foreigners).</li>
+                        <li>Security deposit(where necessary).</li>
+                        <li>Destination address</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        
     </section>
     <section class="form">
         <div class="form-container">
@@ -63,9 +72,13 @@
                 <select id="car-brand" name="car-brand">
                     <option value="toyota">Toyota</option>
                     <option value="honda">Honda</option>
-                    <option value="ford">Ford</option>
-                    <option value="bmw">BMW</option>
+                    <option value="ford">Volkswagen</option>
+                    <option value="bmw">Mercedes</option>
+                    <option value="audi">Nissan</option>
+                    <option value="audi">Mazda</option>
                     <option value="audi">Audi</option>
+                    <option value="audi">BMW</option>
+                    <option value="audi">Range Rover</option>
                 </select>
                 <label for="car-body-type">Car Body Type</label>
                 <select id="car-body-type" name="car-body-type">
@@ -87,7 +100,7 @@
                 <input type="tel" id="phone" name="phone" required>
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required>
-                <button type="submit">Hire Now</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>

@@ -1,5 +1,8 @@
-
+main{
+    margin-top: 150px;
+}
 .welcome {
+    margin-top:100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,15 +11,15 @@
 .welcomeContainer {
     width: 100%;
     height: 50vh; /* Makes the container take the full height of the viewport */
-    background-image: url('images/2023-Range-Rover-Sport-in-motion-2.avif'); /* Replace with the path to your image */
+    background-image: url('images/wedding\ convoy.jpg'); /* Replace with the path to your image */
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 .welcomeText {
     position: absolute; /* Absolute positioning to place the text over the image */
-    top: 30%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    top: 40%; /* Center vertically */
+    left: 30%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for exact centering */
     text-align: center; /* Center text inside the div */
     color: white; /* Text color */
@@ -34,6 +37,7 @@
     flex-wrap: wrap;
     padding: 20px;
     background-color: #ffffff;
+    gap: 20px;
 }
 
 .product-card {
@@ -48,8 +52,8 @@
 }
 .product-card:hover{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.6s ease-in-out;
-    transform: translateY(-5px);
+    /*transition: all 0.6s ease-in-out;
+    transform: translateY(-5px);*/
 }
 
 .product-card img {
