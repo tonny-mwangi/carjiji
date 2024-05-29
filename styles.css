@@ -95,8 +95,13 @@ header {
     font-size: 36px;
     margin-left: 50px;
 }
-
-/* Hamburger menu icon */
+.sidenav-social-icons{
+    margin-top: 100px;
+    display: flex;
+}
+i{
+    color: #000;
+}
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
