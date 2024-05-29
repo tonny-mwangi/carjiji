@@ -23,15 +23,28 @@
             <img src="images/Car jiji.png" alt="logo">
         </div>
         <nav class="navbar">
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="ourcars.html" class="active">Our Cars</a></li>
                 <li><a href="list.html">List Your Car</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ.</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="ourcars.html">Our Cars</a>
+            <a href="list.html">List Your Car</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    
+        <script src="scripts.js"></script>
     </header>
     <main>
         <section class="welcome">

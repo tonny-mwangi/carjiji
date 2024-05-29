@@ -24,44 +24,95 @@ header {
 }
 
 .logo-container img {
-    max-height: 100px;
-    
+    max-height: 100px;  
 }
+/* Base styles for the navigation bar */
 .navbar{
-    
-
     border:2px;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content:flex-end;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    margin-left:300px;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar ul li a {
-    color: #000;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
+    }
     
+    .navbar ul {
+        display: flex;
+        justify-content:flex-end;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-left:300px;
+    }
+    
+    .navbar ul li {
+        margin-left: 20px;
+    }
+    
+    .navbar ul li a {
+        color: #000;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+        
+    }
+    
+    .navbar ul li a:hover {
+        transform: translateY(2px);
+        transition: all 0.3s ease-in-out;
+        text-decoration-line:underline;
+    }
+    
+    .navbar a.active{
+        text-decoration-line: line-through;
+    }
+/* Styles for the side navigation bar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#f0f0f0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.navbar ul li a:hover {
-    transform: translateY(2px);
-    transition: all 0.3s ease-in-out;
-    text-decoration-line:underline;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #009900;
+    display: block;
+    transition: 0.3s;
 }
 
-.navbar a.active{
+.sidenav a:hover {
     text-decoration-line: line-through;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: #009900;
+    padding: 14px 16px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
 }
 
 main {

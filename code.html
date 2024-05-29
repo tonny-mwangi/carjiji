@@ -181,5 +181,40 @@ tbody tr:nth-child(even) {
 
 
 
-
+.navbar{
+    border:2px;
+    }
+    
+    .navbar ul {
+        display: flex;
+        justify-content:flex-end;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-left:300px;
+    }
+    
+    .navbar ul li {
+        margin-left: 20px;
+    }
+    
+    .navbar ul li a {
+        color: #000;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+        
+    }
+    
+    .navbar ul li a:hover {
+        transform: translateY(2px);
+        transition: all 0.3s ease-in-out;
+        text-decoration-line:underline;
+    }
+    
+    .navbar a.active{
+        text-decoration-line: line-through;
+    }
+    
+    
 
