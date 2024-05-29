@@ -352,7 +352,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-links, .footer-address, .footer-newsletter {
+.footer-links, .footer-address, .footer-newsletter, .footer-social{
     flex: 1;
     margin: 10px;
     min-width: 200px;
